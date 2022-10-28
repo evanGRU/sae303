@@ -5,35 +5,213 @@
     <meta charset="UTF-8">
     <title>Sae303 - Dataviz</title>
     <link rel="stylesheet" href="style/style.css">
+    <script src="https://kit.fontawesome.com/efba4a575c.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
 </head>
 
 <body>
     <nav>
+        <div>
+            <img src="img/logo.png" alt="">
+        </div>
+        <a href="#section1">
+            <i class="fa-solid fa-chart-line"></i>
+        </a>
+        <a href="#section2">
+            <img src="img/france.png" alt="">
+        </a>
+        <a href="#section3">
+            <i class="fa-solid fa-chart-bar"></i>
+        </a>
+        <a href="#section4">
+            <i class="fa-solid fa-chart-pie"></i>
+        </a>
+        <a href="#section5">
+            <i class="fa-solid fa-chart-line"></i>
+        </a>
+        <a href="#section6">
+            <i class="fa-solid fa-chart-pie"></i>
+        </a>
+
     </nav>
     <main>
-        <section>
-            <h1>Tableau de Bord</h1>
+        <section id="section1">
+            <h1 class="main-title">Tableau de Bord</h1>
+
+
             <div class="cards">
                 <div class="card">
-
+                    <div class="bubble c1">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <div class="card-text">
+                        <h2>Total Ventes</h2>
+                        <h1>856K</h1>
+                    </div>
                 </div>
                 <div class="card">
-
+                    <div class="bubble c2">
+                        <i class="fa-solid fa-person"></i>
+                    </div>
+                    <div class="card-text">
+                        <h2>Total Visiteurs</h2>
+                        <h1>30K</h1>
+                    </div>
                 </div>
                 <div class="card">
-
+                    <div class="bubble c3">
+                        <i class="fa-solid fa-bag-shopping"></i>
+                    </div>
+                    <div class="card-text">
+                        <h2>Total Commandes</h2>
+                        <h1>1079</h1>
+                    </div>
                 </div>
             </div>
-            <div class="hero">
+
+
+            <div class="hero-content">
                 <div class="main-chart">
-
+                    <div class="graphique1">
+                        <canvas id="myChart1"></canvas>
+                    </div>
                 </div>
-                <div class="categories">
 
+                <div class="categories">
+                    <h1>Top Catégories</h1>
+                    <div class="cat-cards">
+                        <div class="cat-card">
+                            <div class="bubble c1">
+                                <i class="fa-solid fa-camera"></i>
+                            </div>
+                            <h2>Image - Son</h2>
+                        </div>
+                        <div class="cat-card">
+                            <div class="bubble c2">
+                                <i class="fa-solid fa-computer"></i>
+                            </div>
+                            <h2>Informatique</h2>
+                        </div>
+                        <div class="cat-card">
+                            <div class="bubble c3">
+                                <i class="fa-solid fa-blender"></i>
+                            </div>
+                            <h2>Éléctroménager</h2>
+                        </div>
+                        <div class="cat-card">
+                            <div class="bubble c4">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <h2>Téléphonie</h2>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
+
+        <div class="text1">
+            <p>
+                En 2021 Muxe à réaliser un chiffre d’affaires de 855 956,61 €, en vendant 5 catégories de produits. Avec notre analyse on remarque que le mois de mars et le plus prolifique de l’entreprise avec 85 446,7€, cependant septembre et le mois le moins prolifique
+                puisque seulement 62 080,74€ sont générés.
+            </p>
+        </div>
+
+
+
+        <section id="section2">
+            <article>
+                <div class="graphique2">
+                    <div class="flourish-embed flourish-map carte" data-src="visualisation/11582905">
+                        <script src="https://public.flourish.studio/resources/embed.js"></script>
+                    </div>
+                    <div class="text2">
+                        <h1>Connaître son territoire</h1>
+                        <p>
+                            Ici nous voyons que sur le territoire national, Muxe dispose de 49 magasins en France. La vente en ligne va permettre à chaque français de pouvoir commander sans se déplacer.
+                            <br><br>Voici une carte de la France, interactive qui permet de visualiser le nombre de commandes pour chaque région en 2021, on remarque que les régions île de France et Auvergne Rhône Alpes sont dominantes avec 141 commandes
+                            chacune, pour un total de 1079 commandes sur le territoire.
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section id="section3">
+            <article>
+                <div class="graphique3">
+                    <div class="graph">
+                        <canvas id="myChart2"></canvas>
+                    </div>
+                </div>
+
+            </article>
+        </section>
+        <div class="text3">
+            <h1>Analyser pour mieux vendre </h1>
+            <p>
+                Voyons en détail l’argent produit par chaque catégorie d’articles, l’image-son et en premier du classement avec 199 127€ tandis que la catégorie cuisine est dernière du classement avec 139 574€. Les clients sont plus réticents pour l’achat de cuisine
+                en ligne pour pouvoir augmenter les ventes de cuisine nous proposons le fait de pouvoir visualisé les cuisines en modèles 3D comme le font différents sites pour que le client soit plus à l’aise pour commander l’article.
+            </p>
+        </div>
+        <section id="section4">
+            <article>
+                <div class="graphique4">
+                    <div class="pie">
+                        <canvas id="myChart3"></canvas>
+                    </div>
+                    <div class="text2">
+                        <h1>Baissé pour attirer plus </h1>
+                        <p>
+                            La stratégie a adopté pour augmenter le chiffre d’affaires du mois de septembre (mois moins prolifique) et de proposer un coupon ‘RENTREE’ de 4% valable uniquement le mois de septembre sur la téléphonie puisque vous prenez 8% de commission, vous allez
+                            attirer plus de client avec les réductions et faire plus de bénéfice.
+                        </p>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <section id="section5">
+            <article>
+                <div class="graphique5">
+                    <div class="graph">
+                        <canvas id="graph"></canvas>
+                        <div class="inputs">
+                            <p><input type="checkbox" id="check1" value="A" data-color=#FEBA2D data-label="Point relais" data-value="[33, 28, 29, 28, 28, 32, 32, 24, 24, 27, 25, 20]">Point relais</p>
+                            <p><input type="checkbox" id="check1" value="B" data-color=#DD7BF4 data-label="Domicile" data-value="[23, 20, 35, 22, 31, 26, 31, 33, 31, 25, 33, 35]">Livraison à domicile</p>
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+        </section>
+        <div class="text3">
+            <h1>La livraison, l’étape finale du e-commerce</h1>
+            <p>
+                Le retrait sur place est dominant comme on peut le voir sur ce graphique. C’est une opportunité pour MUXE de réaliser de plus grands bénéfices, je propose qu’à la réception de leur colis, on vient leur proposer des produits afin de les inciter à acheter
+                plus. Le but sera de proposer aux clients des produit en stock pour qu’ils puissent le voir directement de leurs propres yeux.
+            </p>
+        </div>
+        <section id="section6">
+            <article>
+                <div class="graphique6">
+                    <div class="chart">
+                        <div id="chart"></div>
+                    </div>
+                    <div class="doughnut">
+                        <canvas id="myChart6"></canvas>
+                    </div>
+                </div>
+            </article>
+        </section>
+        <div class="text3">
+            <h1>Marge nette</h1>
+            <p>
+                La marge nette en euros est la plus élevée pour la catégorie téléphonie du fait qu’elle possède le plus gros pourcentage de marge nette, tandis que l’informatique est au plus bas dans les deux domaines. Ne pas abandonnez la vente de produits informatiques mais accentués (promouvoir) la vente de la catégorie téléphonie afin d’obtenir le plus d’argent possible.
+            </p>
+        </div>
+
     </main>
+
+    <script type="module" src="js/demo2.js"></script>
 </body>
 
 </html>
